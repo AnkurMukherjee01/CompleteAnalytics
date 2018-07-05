@@ -1,0 +1,33 @@
+@import "../../scss/variables";
+
+.aboutusContainer{
+  @include menuMarginTop;
+  color: $color-light;
+  background-color: darkslategrey;
+  padding-bottom: 40px;
+}
+.topHeader{
+  height: 400px;
+  background-image: url('../../assets/images/about_us2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.header{
+  font-size: 2em;
+  width: 85%;
+  padding: 10px;
+}
+.headerContainer{
+  padding: 20px;
+}
+.rightContent{
+  min-width: 30%;
+}
+.aboutusContainer .content{
+  padding: 0px 10px 0px 10px;
+  margin: 15px;
+  width: 70%;
+  font-size: 1.1em;
+}

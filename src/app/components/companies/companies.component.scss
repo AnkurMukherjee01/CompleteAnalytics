@@ -1,0 +1,85 @@
+@import '~scss/variables.scss';
+:host /deep/{
+    .tile{
+        height: 120px;
+        margin:5px;
+        white-space: nowrap;        
+        text-align: center;
+        margin: 1em 0;
+        background: #fff;
+    }
+}
+.contentHeader{
+    font-family: 'Roboto';
+    color:rgb(39, 33, 124);
+   // padding-right:40%;
+    font-weight: 500;
+    font-size:50px;
+    text-shadow:3px 3px rgb(94, 87, 197);
+}
+.dot {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 5px #a8a8a8;
+  }
+//   .dotLeft{
+//     box-shadow: 0px 0px 5px 5px #a8a8a8;
+//   }
+//   .dotRight{
+//     box-shadow: 0px 0px 5px 5px #a8a8a8;
+    
+//   }
+  .rightRs{
+    padding-right:3%;
+  }
+.dot *{
+    padding-top:12px;
+    color: rgb(0,119,145) !important;
+    font-size:1.6em;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+ngu-carousel{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+ngu-tile img{
+    vertical-align: middle;
+    max-height: 100px;
+    max-width: 200px;
+}
+.leftRs .glyphicon, .rightRs .glyphicon{
+    font-size: 2em;
+    color: $color-dark;
+}
+.leftRs {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+.rightRs {
+    position: absolute;
+    top: 50px;
+    right:0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+
+@media only screen and (max-width: 425px) {
+    ngu-tile img{
+        width:100%;
+    }
+}   

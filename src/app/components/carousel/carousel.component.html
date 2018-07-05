@@ -1,0 +1,27 @@
+<ngu-carousel class="carouselInput"
+[inputs]="carouselOne">
+  <ngu-item NguCarouselItem *ngFor="let data of carouselData; let i = index">
+    <img class="img" src="{{data.url}}">
+    <div id="data-{{i}}" class="content">
+      <span class="contentHeader" *ngIf="data.contentHeader != ''">{{data.contentHeader}}</span>
+      <span class="contentDetail" *ngIf="data.content != '' && !isArray(data.content)">{{data.content}}</span>
+      <span class="contentDetail" *ngIf="data.content != '' && isArray(data.content)">
+        <span class="quotes" *ngFor="let q of data.content">
+          {{q}}
+        </span>
+      </span>
+      <button class="btn btn-cta" *ngIf="data.button" (click)="ctaBtnClicked(data.buttonId)">{{data.buttonName}}<span [class]="data.buttonIcon"></span></button>
+    </div>
+  </ngu-item>
+
+  <button NguCarouselPrev class='leftRs'>
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button NguCarouselNext class='rightRs'>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+  </button>
+</ngu-carousel>
+<contact-popup #contactPopup type="Schedule Demo"></contact-popup>
+<contact-popup #projectPopup type="Project"></contact-popup>

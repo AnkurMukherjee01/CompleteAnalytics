@@ -1,0 +1,101 @@
+@import '~scss/variables.scss';
+
+:host /deep/{
+    re-captcha>div{
+        transform:scale(0.8);
+        transform-origin:0 0;
+    }
+  }
+.contactPage{
+    background-color: $color-gray;
+    color: $color-dark;
+    padding: 15px;
+    margin-top: 50px;
+    background-image: url('../../assets/images/contact-background.jpg');
+    background-size: 100%;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.mainContactInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: $color-lightbg;
+    border: 20px;
+    border-radius: 10px;
+}
+.address .fa{
+    font-size: 2em;
+}
+
+.contactForm{
+    flex: 1 1;
+}
+.gmaps{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+.highlight{
+    color: $color-dark;
+
+    a{
+        color: $color-dark;
+        text-decoration: underline; 
+    }
+}
+.address{
+    flex: 1 1;
+    border-radius: 5px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.addRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    height: 73px;
+}
+.addRow:not(.addRow:last-child){
+    border-bottom: 1px solid rgba(1,1,1,0.2);
+}
+.addColHeading{
+    width: 20%;
+}
+.addColContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+.addColContent a{
+    color: $color-dark;
+}
+
+.address span{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+form button[type="submit"]{
+    width: 100%;
+    height: 62.4px;
+    font-size: 1.5em;
+}
+.pageHeader{
+    color: $color-light;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactContainer{
+        flex-direction: column-reverse;
+    }
+}

@@ -1,0 +1,11 @@
+@import "~scss/variables.scss";
+
+:host { 
+    color: $color-dark;
+}
+
+span{
+    font-size: 1.5em;
+    margin-left: 25px;
+    padding: 5px;
+}

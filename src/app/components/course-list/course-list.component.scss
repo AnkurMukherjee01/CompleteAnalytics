@@ -1,0 +1,14 @@
+.courseList{
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.filterBox{
+    flex: 1 1 100%;
+    margin-left: 20px;
+}
+.contentHeader{
+    font:400 20px/32px Roboto,"Helvetica Neue",sans-serif;
+  }

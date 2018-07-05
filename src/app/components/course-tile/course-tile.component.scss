@@ -1,0 +1,55 @@
+@import '~scss/variables.scss';
+
+:host{
+    color: $color-dark;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+.card{
+    width: 25rem;
+    margin: 20px;
+    font: 500 20px/32px Roboto,"Helvetica Neue",sans-serif;
+     color:rgb(13, 106, 255);
+}
+.card-title{
+    height: 40px;
+    text-shadow: 3px 3px 3px rgb(161, 157, 219);
+}
+
+.detailsRow{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.joinBtn{
+    width: 100%;
+    background-color: rgb(5, 113, 146);
+    color: white;
+    font-size: 1.3em;
+
+    span{
+        top: 3px;
+        margin-left: 5px;
+    }
+}
+img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.rating{
+    display: flex;
+    flex-direction: column;
+    svg{
+        font-size: 0.5em;
+    }
+}

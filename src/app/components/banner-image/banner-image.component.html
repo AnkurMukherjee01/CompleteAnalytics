@@ -1,0 +1,4 @@
+<div class="bannerimage">
+  <img *ngIf="!height" [src]="src" width="100%" height="500px"/>
+  <img *ngIf="height" [src]="src" width="100%" [height]="height"/>
+</div>

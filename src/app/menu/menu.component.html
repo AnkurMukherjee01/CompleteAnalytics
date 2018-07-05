@@ -1,0 +1,56 @@
+<nav class="navbar">
+  <div [@slideInOut]="animationState" class="contactInfo row">
+    <div class="contactMenu col col-md-6">
+        <!-- <span><a [routerLink]="['/become-instructor']" [routerLinkActive]="['active']" (click)="closeMenu()">Be an Instructor</a></span> -->
+        <span><a [routerLink]="['/about']" [routerLinkActive]="['active']" (click)="closeMenu()">About Us</a></span>
+        <span><a [routerLink]="['/contact']" [routerLinkActive]="['active']" (click)="closeMenu()">Contact</a></span>
+    </div>
+    <div class="contactDetails col col-md-6">
+      
+        <i class="fa fa-phone-square" aria-hidden="true"></i><span>91 9886096090</span>
+        <span>|</span>
+        <i class="fa fa-envelope" aria-hidden="true"></i><span><a href="mailto:info@completeanalytics.in">info@completeanalytics.in</a></span>
+    </div>
+  </div>
+  <div class="container-fluid myNav">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="toggleCollapse()">
+        <span class="sr-only">Toggle navigation</span>
+        <span *ngIf="!show" class="glyphicon glyphicon-menu-hamburger"></span>
+        <span *ngIf="show" class="glyphicon glyphicon-remove"></span>
+      </button>
+    </div>
+    
+    <div class="brand-ca">
+      <a class="navbar-brand">
+        <span class="brandText">
+            <a [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['active']" (click)="closeMenu()">Complete Analytics</a></span>
+        <!-- <img src="assets/images/completeAnalytics_horizontalLogo.png" alt="CompleteAnalytics"> -->
+      </a>
+    </div>
+    
+    <div class="navbar-collapse collapse" [class.show]="show">
+      <ul class="nav navbar-nav navbar-left">
+        <!-- <li><a [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }" [routerLinkActive]="['active']" (click)="closeMenu()">Home</a></li>
+        <li><a [routerLink]="['/courses']" [routerLinkActive]="['active']" (click)="closeMenu()">Courses</a></li>
+        <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" (click)="closeMenu()">About Us</a></li>
+        <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']" (click)="closeMenu()">Contact</a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><a [routerLink]="['/courses']" [routerLinkActive]="['active']" (click)="closeMenu()">Courses</a></li>
+          <!-- <li><a [routerLink]="['/about']" [routerLinkActive]="['active']" (click)="closeMenu()">About Us</a></li>
+          <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']" (click)="closeMenu()">Contact</a></li> -->
+        <li><a [routerLink]="['/corporate-training']" [routerLinkActive]="['active']" (click)="closeMenu()">Corporate Training</a></li>
+        <li><a [routerLink]="['/employer']" [routerLinkActive]="['active']" (click)="closeMenu()">Hire</a></li>
+        <li><a [routerLink]="['/become-instructor']" [routerLinkActive]="['active']" (click)="closeMenu()">Become an Instructor</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+  <!--/.container-fluid -->
+</nav>
+<nav class="recentBatches">
+  <ul class="nav">
+    <li><a [routerLink]="['/upcoming-batches']"><b>Upcoming Batches</b></a></li>
+  </ul>
+</nav>

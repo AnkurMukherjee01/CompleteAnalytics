@@ -1,0 +1,236 @@
+@import '~scss/variables';
+
+.navbar{
+    border-radius: 0px;
+    padding-bottom: 15px;
+    background-color: white; 
+    color: rgb(16, 104, 247);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // @include menuHeight;
+    z-index: 15;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height:120px;
+    font-size:15px;
+    box-shadow:0 4px 8px 0 rgb(172, 172, 172), 0 6px 20px 0 rgba(255, 255, 255, 0.507);
+}
+.contactInfo{
+    max-width: 80%;
+    margin-left: 10%;
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    // padding-left: 60%;
+    padding-top: 10px;;
+    background-color:rgb(42, 34, 155);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white !important;
+    font-size: 15px;
+    font-family: 'Roboto';
+    // border-bottom-color: rgb(168, 201, 255);
+    // border-left-color: rgb(168, 201, 255);
+    // border-right-color: rgb(168, 201, 255);
+    box-shadow: 0 4px 8px 0 rgb(42, 34, 155), 0 6px 20px 0 white;
+    transition: .8s ease-in-out all;
+}
+.contactMenu>span>a{
+padding-left:10px;
+font-size: 15px;
+color:white;
+}
+.contactDetails>span>a{
+    color:white;
+}
+.contactDetails{
+    text-align: right;
+    float: right;
+    justify-content: right;
+}
+// .contactInfo div i{
+//     margin-right: 3px;
+// }
+// .contactInfo a{
+//     color: $color-light;
+// }
+.navbar-header{
+    height: 50px;
+}
+.navbar-right{
+padding-top:20px;
+font-weight: 300;
+}
+.navbar-collapse.collapse.show{
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #f3f3f3;
+    margin-top: -1px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    display: block!important;
+}
+.brandText>.navbar-brand {
+  padding: 0px;
+}
+a {text-decoration: none;font-family: 'Roboto' }
+.navbar-brand>img {
+  height: 100%;
+  padding-bottom: 2px;
+  width: auto;
+}
+.navbar-nav>li>a{
+    color: rgb(16, 104, 247);
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 20px;
+}
+.navbar-brand{
+    color:rgb(49, 83, 137) ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: $color-lightbg;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+  }
+
+
+.navbar-nav>li>a:hover:before,
+.navbar-nav>li>a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a.active, .navbar-nav>li>a:focus{
+    color: rgb(3, 56, 141) ;
+    background-color: transparent;
+}
+
+.brand-ca {
+  display: flex;
+  margin-left:11%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 70px;
+  font-family: 'Roboto'
+}
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.brandText{
+    font-size: 2.2em;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+.recentBatches{
+    position: fixed;
+    bottom: 0;
+    margin: 0px;
+    left: 10px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 10;
+    background-color:rgb(42, 34, 155);
+    color: white !important;
+    font-size: 20px;
+    font-family: 'Roboto';
+    box-shadow: 0 4px 8px 0 rgb(42, 34, 155), 0 6px 20px 0 white;
+   /// font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.recentBatches a{
+    color: white;
+}
+.recentBatches a.active, .recentBatches a:focus,.recentBatches a:hover{
+    background-color: transparent;
+}
+
+.myNav{
+    top:50px;
+}
+@media (max-width: 500px){
+    .contactInfo{
+      font-size:3vw;
+      max-height:75px;
+    }
+    .brand-centered{
+        top: 0;
+    }
+    .brand-ca{
+        margin-left:25%;
+            }
+            .brandText{
+                font-size: 6vw;
+            }
+            .contactMenu>span>a{
+                padding-left:0px;
+                font-size: 3vw;
+                color:white;
+                }
+}
+
+@media (max-width: 1200px) and (min-width:500.01px) {
+    .contactMenu>span>a{
+        padding-left:0px;
+        font-size: 2vw;
+        color:white;
+        }
+    .contactInfo{
+        margin-left:0.5%;
+        max-width: 99%;
+        font-size:2vw;
+    }
+    .brand-ca{
+margin-left:35%;
+top:50px;
+    }
+    .brandText{
+        font-size: 4vw;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+        background-color: #f3f3f3;
+    }
+}

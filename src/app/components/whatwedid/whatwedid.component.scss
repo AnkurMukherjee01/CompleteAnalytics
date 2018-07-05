@@ -1,0 +1,66 @@
+@import '~scss/variables.scss';
+:host{
+    color: $color-light;
+}
+.contentHeader{
+color:rgba(61, 60, 60, 0.79);
+font-size:70px;
+text-shadow:4px 4px 4px rgba(99, 98, 98, 0.79);
+
+}
+.wrapper{
+   // background-image: url('../../../assets/images/whatwedid.jpg');
+   font:400 40px/32px Roboto,"Helvetica Neue",sans-serif;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(3, 148, 158);
+    padding-bottom: 20px;
+}
+.rowContainer{
+ text-align: center;
+}
+.rowContainer img{
+    
+}
+.data{
+    font-size:100px;
+    text-shadow: 5px 5px 5px white;
+    transition: 1s ease-in-out all;
+}
+.dataText{
+    padding-top:20px;
+    font-size:40px;
+}
+.info{
+    padding-top:80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    flex: 1 1;
+    padding: 20px;
+    padding-top:80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    background: transparent;
+    // border: 0px;
+    // width: 400px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    z-index: 5;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+}

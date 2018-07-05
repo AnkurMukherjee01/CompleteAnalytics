@@ -1,0 +1,33 @@
+@import '~scss/variables.scss';
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+.footer{
+    margin-top: 30px;
+    z-index: 20;
+    font-family: 'Roboto';
+    color:rgb(49, 83, 137);
+    padding-bottom: 30px;
+}
+.socialIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    // a{
+    //     color: rgb(42, 71, 117);
+    // }
+}
+.links{
+    ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+    // a{
+    //     color: $color-dark;
+    // }
+}
+.h3 *{
+    color:rgb(20, 53, 105);
+}

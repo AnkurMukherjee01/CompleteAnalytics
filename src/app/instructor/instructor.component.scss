@@ -1,0 +1,53 @@
+@import '~scss/variables.scss';
+:host /deep/{
+    re-captcha>div{
+        transform:scale(0.8);
+        transform-origin:0 0;
+    }
+  }
+.instructorPage{
+    @include menuMarginTop;
+    justify-content: center;
+    color: $color-light;
+}
+
+.formContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color : #8C97A5;
+}
+.formContainer img{
+    // position: absolute;
+    // padding-top: 350px;
+    // z-index: -5;
+    width: 100%;
+    height: 300px;
+}
+form button[type="submit"]{
+    width: 100%;
+    height: 62.4px;
+    font-size: 1.5em;
+}
+.instructorForm{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.instructorForm .textContent{
+    flex: 1 1;
+    padding: 20px;
+    font-size: 1.3em;
+}
+.instructorForm form{
+    background-color: darkslategrey;
+    padding: 20px;
+    flex: 1 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .instructorForm{
+        width: 75%;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,46 @@
+@import '~scss/variables.scss';
+:host /deep/{
+    re-captcha>div{
+        transform:scale(0.8);
+        transform-origin:0 0;
+    }
+  }
+.employerPage{
+    @include menuMarginTop;
+    justify-content: center;
+}
+.pageHeader{
+    padding: 30px;
+    color: $color-light;
+    flex: 1 1;
+    height: 100vh;
+  }
+
+.formContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../../assets/images/hire_background.jpg');
+    background-size: cover;
+}
+form button[type="submit"]{
+    width: 100%;
+    height: 62.4px;
+    font-size: 1.5em;
+}
+.employerForm{
+    padding: 20px;
+    flex: 1 1;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: darkslategrey;
+    box-shadow: 5px 4px 10px rgba($color: #000000, $alpha: 0.6)
+}
+
+
+@media only screen and (max-width: 768px) {
+    .employerForm{
+        width: 75%;
+        margin-left: 20px;
+    }
+}

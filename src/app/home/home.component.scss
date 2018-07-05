@@ -1,0 +1,50 @@
+@import "../../scss/variables";
+:host /deep/{
+  .courselist course-list .courseList{
+    justify-content: center;
+  }
+}
+.homepage{
+  @include menuMarginTop;
+  background: #eee;
+}
+.courselist>h3.contentHeader{
+  font:400 40px/32px Roboto,"Helvetica Neue",sans-serif;
+  color:rgb(39, 33, 124);
+  padding-right:50%;
+}
+
+.coursel{
+  background: #ccc;
+}
+.whatwedid{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.companies{
+  padding: 20px;
+}
+
+.moreBtn{
+  background-color:rgb(5, 113, 146);
+  color: white;
+  font-size: 1.3em;
+font-family: 'Roboto'
+  span{
+      top: 3px;
+      margin-left: 5px;
+  }
+}
+.moreBtn:hover{
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+@media (max-width:500px){
+//   .carousel {
+//     position: relative;
+//     top: 110px;
+//     font-size: 2vw;
+// }
+
+}

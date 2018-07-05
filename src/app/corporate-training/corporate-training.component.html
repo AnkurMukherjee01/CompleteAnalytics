@@ -1,0 +1,102 @@
+<div class="corporateTrainingPage">
+  <div class="formContainer"> 
+    <div class="pageHeader">
+      <h2>Corporate Training</h2>
+      <h4>Rob Liano said “Knowledge is power? No. Knowledge on its own is nothing, but the application
+          of useful knowledge, now that is powerful”, and we think Mr. Rob got it absolutely right. So we
+          are here to give corporate training to teach you trending analytical skills using different
+          tools and techniques and build a technically strong workforce for your company. Till date,
+          we have taken 30+ corporate trainings in esteemed companies like GE, Cognizant, LDC,
+          ZERODHA and others. Our corporate training pays much importance to competencies and
+          emphasizes on to the way the business world handles learning, paying more hours catered to
+          Hands-On.</h4>
+
+
+          <h3><b>Trainings in Esteemed Universities/ Colleges</b></h3>
+
+          <h4>Oxford, St. Joseph, Krupanidhi, RNN nursing college, University of agricultural sciences</h4>
+    </div>
+    <div class="corporateTrainingForm">
+       
+      <form #corporateTrainingForm="ngForm" (ngSubmit)="onSubmit(corporateTrainingForm)">
+        <div class="row">
+          <div class="col col-md-12">
+            <div class="form-group">
+              <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
+            </div>
+            <!-- <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+              <div *ngIf="name.errors.required">
+                Name is required.
+              </div>
+            </div> -->
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col col-md-6">
+          <div class="form-group">
+            
+            <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+          </div>
+          <!-- <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+            <div *ngIf="email.errors.required">
+              Email is required.
+            </div>
+            <div *ngIf="email.errors.email">
+              Please enter a valid email.
+            </div>
+          </div> -->
+          </div>
+          <div class="col col-md-6">
+            <div class="form-group">
+              <input type="text" placeholder="Phone No" class="form-control" name="phoneNo" ngModel>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-6">
+          <div class="form-group">
+            
+            <input type="text" placeholder="Company Name" class="form-control" name="company" ngModel #company="ngModel">
+          </div>
+          </div>
+          <div class="col col-md-6">
+            <div class="form-group">
+              <input type="text" placeholder="Position" class="form-control" name="position" ngModel>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-md-12">
+              <div class="form-group">
+                  <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+              </div>
+              <!-- <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                <div *ngIf="subject.errors.required">
+                  Subject is required.
+                </div>
+              </div>     -->
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col col-md-12">
+              <div class="form-group">
+                  <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
+              </div>
+              <!-- <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+                <div *ngIf="message.errors.required">
+                  Message is required.
+                </div>
+              </div> -->
+          </div>
+        </div>
+          
+          <div class="row">
+            <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6LdVXDoUAAAAAFgko3c9x3JzgpSn9j4GGhZiqg7V" required></re-captcha></div>
+            <div class="col col-md-6"><button type="submit" [disabled]="!recaptchaDone || corporateTrainingForm.invalid" class="btn btn-success">Send Message</button></div>
+          </div>
+        </form>
+    </div>
+  </div>
+</div>

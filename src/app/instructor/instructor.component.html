@@ -1,0 +1,107 @@
+<div class="instructorPage">
+    <div class="formContainer">
+         
+        <div class="contentContainer">
+          
+          <div class="instructorForm">
+            <div class="textContent">
+              <h2><b>Become an Instructor</b></h2>  
+              <h4>Skilled and qualified instructors always share their knowledge and experience with the
+                world. Complete Analytics provides you a stage for the same to conduct the classes for our
+                students and even present you analytical capability in the best possible light. Along with the
+                regular classes, you can also build on other skills applicable beyond your course and
+                handle projects if any and procure benefit in terms of earning some extra income. The
+                motive is obtain mutual help wherein, you are benefitted to achieve both professional and
+                personal learning goals and our institute will have an additional wonderful tutor. We will help
+                you content your course looking into your expertise with a view to create economic
+                opportunity for every member of the workforce in Complete Analytics. So why delay, apply
+                now!</h4>
+                <h3><b>Apply Now!</b></h3>
+                  <h4>If you’re interested in becoming an instructor, please fill the details. We will revert in two
+                  business days.</h4>
+                  <h4>Thank you for your interest, and here’s hoping we’re creating an excellent course together
+                      soon.</h4>
+            </div>
+              <form #instructorForm="ngForm" (ngSubmit)="onSubmit(instructorForm)">
+                <div class="row">
+                  <div class="col col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Name" class="form-control" name="name" ngModel required #name="ngModel">
+                    </div>
+                    <!-- <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                      <div *ngIf="name.errors.required">
+                        Name is required.
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col col-md-6">
+                  <div class="form-group">
+                    
+                    <input type="email" placeholder="Email" class="form-control" name="email" email="true" ngModel #email="ngModel" required>
+                  </div>
+                  <!-- <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert alert-danger">
+                    <div *ngIf="email.errors.required">
+                      Email is required.
+                    </div>
+                    <div *ngIf="email.errors.email">
+                      Please enter a valid email.
+                    </div>
+                  </div> -->
+                  </div>
+                  <div class="col col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Phone No" class="form-control" name="phoneNo" ngModel>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col col-md-12">
+                      <div class="form-group">
+                          <input type="text" placeholder="Subject" class="form-control" name="subject" ngModel #subject="ngModel" required>
+                      </div>
+                      <!-- <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                        <div *ngIf="subject.errors.required">
+                          Subject is required.
+                        </div>
+                      </div>     -->
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <div class="form-group">
+                            <input type="number" placeholder="Work Experience in years" class="form-control" name="workexp" ngModel #workexp="ngModel" required>
+                        </div>
+                        <!-- <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert alert-danger">
+                          <div *ngIf="subject.errors.required">
+                            Subject is required.
+                          </div>
+                        </div>     -->
+                    </div>
+                  </div>
+          
+                <div class="row">
+                  <div class="col col-md-12">
+                      <div class="form-group">
+                          <textarea style="resize:none" placeholder="Message" class="form-control" rows="3" name="message" ngModel #message="ngModel" required></textarea>
+                      </div>
+                      <!-- <div *ngIf="message.invalid && (message.dirty || message.touched)" class="alert alert-danger">
+                        <div *ngIf="message.errors.required">
+                          Message is required.
+                        </div>
+                      </div> -->
+                  </div>
+                </div>
+                  
+                  <div class="row">
+                    <div class="col col-md-6"><re-captcha #captchaRef="reCaptcha" (resolved)="resolved($event)" siteKey="6LdVXDoUAAAAAFgko3c9x3JzgpSn9j4GGhZiqg7V" required></re-captcha></div>
+                    <div class="col col-md-6"><button type="submit" [disabled]="!recaptchaDone || instructorForm.invalid" class="btn btn-success">Send Message</button></div>
+                  </div>
+                </form>
+              </div>
+              <img src="assets/images/became-an-instructor.svg"/>
+            </div>
+          </div>
+</div>

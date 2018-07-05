@@ -1,0 +1,72 @@
+@import '~scss/variables.scss';
+:host /deep/{
+    .tile{
+        box-shadow: 0 0px 0px!important;
+    }
+
+    div.ngucarousel-items{
+        display: flex;
+    }
+    ngu-tile{
+        flex: 1 0 auto;
+    }
+    ngu-tile .tile, ngu-tile .tile .testimonyContainer{
+        height: 100%;
+    }
+}
+.wrapper{
+    background-image: url('../../../assets/images/testimonials.jpg');
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.contentHeader{
+    padding-top:20px;
+   font-family: 'Roboto';
+   font-size: 40px;
+   font-weight: 500;
+    color:whitesmoke;
+    text-shadow: 2px 2px whitesmoke;
+}
+ngu-carousel{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.dot {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px 5px #a8a8a8;
+  }
+  .dot *{
+    padding-top:12px;
+    color: rgb(0,119,145) !important;
+    font-size:1.6em;
+}
+.leftRs .glyphicon, .rightRs .glyphicon{
+    font-size: 2em;
+    color: $color-light;
+}
+.leftRs {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+}
+.rightRs {
+    position: absolute;
+    top: 50px;
+    right:0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0px;
+    padding-right:2%;
+}
