@@ -14,6 +14,7 @@
     min-height:120px;
     font-size:15px;
     box-shadow:0 4px 8px 0 rgb(172, 172, 172), 0 6px 20px 0 rgba(255, 255, 255, 0.507);
+    background-color: rgb(203,225,255);
 }
 .contactInfo{
     max-width: 80%;
@@ -79,13 +80,14 @@ a {text-decoration: none;font-family: 'Roboto' }
   width: auto;
 }
 .navbar-nav>li>a{
-    color: rgb(16, 104, 247);
+    color: rgb(42,34,155);
     margin-left: 1px;
     margin-right: 1px;
     font-size: 20px;
+    font-weight: 400;
 }
 .navbar-brand{
-    color:rgb(49, 83, 137) ;
+    color:rgb(31, 52, 87) ;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -110,7 +112,7 @@ a {text-decoration: none;font-family: 'Roboto' }
     transform: scaleX(1);
 }
 .navbar-nav>li>a:hover, .navbar-nav>li>a.active, .navbar-nav>li>a:focus{
-    color: rgb(3, 56, 141) ;
+    color: rgb(42,34,155);
     background-color: transparent;
 }
 
