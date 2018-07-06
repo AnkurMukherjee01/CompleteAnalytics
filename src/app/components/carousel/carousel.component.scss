@@ -85,7 +85,7 @@ ngu-item img{
     // }
     .content .contentDetail{
         width: 100%;
-        font-size: 0.8em;
+     //   font-size: 0.8em;
     }
     // .content button{
     //     margin-top: 0px;
@@ -141,27 +141,29 @@ ngu-item img{
     }
     .content,.content .quotes, .contentDetail, .contentHeader{
 padding:0px!important; 
+
     }
   }
   @media (max-width:600px){
-    .content,.content .quotes, .contentDetail, .contentHeader{
-        font-size: 4em !important;
-        width: 100%;
-        font-weight: 500;
-padding:0px!important; 
-    }
-    .content .quotes{
-        font-size: 1.0em !important;
-        width: 100%;
-        font-weight: 500;
-padding:0px!important; 
-    }
-    ngu-item >div {
-    //     font-size: 12px;;
+    // ngu-item >div {
+    //     font-size: 2vw !important;
     //     width:100%;
     //     left:0%;
-    //   }
+    //   } 
+    .content,.content .quotes, .contentDetail, .contentHeader{
+        font-size:4.5vw !important;
+        width: 100%;
+        font-weight: 500;
+padding:0px!important; 
+padding-top:15% !important;
     }
+    .content .quotes{
+
+        width: 100%;
+        font-weight: 500;
+padding:0px!important; 
+    }
+    
   }
 //   }
 //   @media (max-width:600px){
