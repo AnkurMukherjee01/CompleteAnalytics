@@ -5,7 +5,7 @@
         "duration" : 80,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/predictive_modelling_logo.png", 
+        "img": "assets/images/predictive.png", 
         "learning_mode": "Classroom Training",
         "price" : 22000
     },{
@@ -14,7 +14,7 @@
         "duration" : 60,
         "classes": 10,
         "tools" : "SAS",
-        "img": "assets/images/sas_logo.png",
+        "img": "assets/images/sas.png",
         "learning_mode": "Classroom Training",
         "price" : 10000
     },{
@@ -23,7 +23,7 @@
         "duration" : 40,
         "classes": 10,
         "tools" : "Python",
-        "img": "assets/images/python_logo.png",
+        "img": "assets/images/python.png",
         "learning_mode": "Classroom Training",
         "price" : 10000
     },{
@@ -32,7 +32,7 @@
         "duration" : 30,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/r_logo.png",
+        "img": "assets/images/R.png",
         "learning_mode": "Classroom Training",
         "price" : 10000
     },{
@@ -80,7 +80,7 @@
         "duration" : 80,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/predictive_modelling_logo.png", 
+        "img": "assets/images/predictive.jpg", 
         "learning_mode": "Classroom Training",
         "price" : 22000
     },{
@@ -89,7 +89,7 @@
         "duration" : 60,
         "classes": 10,
         "tools" : "SAS",
-        "img": "assets/images/sas_logo.png",
+        "img": "assets/images/sas.png",
         "learning_mode": "Classroom Training",
         "price" : 10000
     },{
@@ -98,7 +98,7 @@
         "duration" : 40,
         "classes": 10,
         "tools" : "Python",
-        "img": "assets/images/python_logo.png",
+        "img": "assets/images/python.jpg",
         "learning_mode": "Classroom Training",
         "price" : 10000
     },{
@@ -107,7 +107,7 @@
         "duration" : 30,
         "classes": 10,
         "tools" : "R",
-        "img": "assets/images/r_logo.png",
+        "img": "assets/images/R.jpg",
         "learning_mode": "Classroom Training",
         "price" : 10000
     }]
